@@ -1,31 +1,34 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 // imported component
-import AddUser from "./AddUser";
-import AllUser from "./AllUser";
 
 // metarial UI
 
 import { AppBar, Toolbar, styled, Typography } from "@mui/material";
 
 const Header = styled(AppBar)`
-  background-color: silver;
-  color: black;
+  color: white;
   position: static;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 `;
-const Tag = styled(Typography)`
+const Tag = styled(NavLink)`
   font-size: 1.6rem;
-  margin-left: 1rem;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  margin-left: 3rem;
 `;
 
 const Navbar = () => {
   return (
     <Header>
       <Toolbar>
-        <Tag>Home</Tag>
-        <Tag>All users</Tag>
-        <Tag>Add user</Tag>
+        <Tag to="/">Home</Tag>
+        <Tag to="/alluser">All user</Tag>
+        <Tag to="/add">Add User</Tag>
       </Toolbar>
     </Header>
   );
