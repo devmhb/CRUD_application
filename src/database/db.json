@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "name": "Tamim",
+      "name": "Tamimm",
       "username": "tamim iqbal",
       "email": "tamim@gmail.com",
       "phone": "018743573235",
@@ -15,39 +15,11 @@
       "id": 2
     },
     {
-      "name": "Hasan",
-      "username": "hasan ferdous",
-      "email": "hasan@gmail.com",
-      "phone": "01873453345",
+      "name": "Atif",
+      "username": "atif aslam",
+      "email": "atifaslam@gmail.com",
+      "phone": "081876858884",
       "id": 3
-    },
-    {
-      "name": "sayem",
-      "username": "sayem",
-      "email": "sayem@gmail.com",
-      "phone": "0183456343",
-      "id": 4
-    },
-    {
-      "name": "sayem",
-      "username": "sayem",
-      "email": "sayem@gmail.com",
-      "phone": "0183456343",
-      "id": 5
-    },
-    {
-      "name": "kaiser",
-      "username": "kasier",
-      "email": "kasierfsfsf@ajga.com",
-      "phone": "8347326482648",
-      "id": 6
-    },
-    {
-      "name": "Jummon Rafi",
-      "username": "jummonrafi",
-      "email": "jummon@gmail.com",
-      "phone": "0183424862842",
-      "id": 7
     }
   ]
 }
