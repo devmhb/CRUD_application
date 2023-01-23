@@ -1,5 +1,8 @@
 import React from "react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+import { Adduser } from "./services/api";
 
 // <styles and styled componet>
 import {
@@ -28,11 +31,16 @@ const initialValue = {
 };
 const AddUser = () => {
   const [user, setuser] = useState(initialValue);
+  const navigate = useNavigate();
 
-  const onValueChange = (e) =>
+  const onValueChange = (e) => {
     setuser({ ...user, [e.target.name]: e.target.value });
+  };
 
-  const AddnewUser = () => {};
+  const AddnewUser = async (e) => {
+    await Adduser(user);
+    navigate("/alluser");
+  };
 
   return (
     <Container>
@@ -72,7 +80,7 @@ const AddUser = () => {
           onChange={(e) => onValueChange(e)}
           name="phone"
         />
-        <Button variant="contained" onClick={() => AddnewUser()}>
+        <Button variant="contained" onClick={(e) => AddnewUser(e)}>
           ADD USER
         </Button>
       </FormControl>
